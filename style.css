@@ -276,9 +276,12 @@ Control text on front page */
   max-width: 300px;
 } */
 
+/* FONT TYPE */
+
 .frontpage_description p {
-  padding: 5px 20px;
-  font-weight: 400;
+  font-size: 22px;
+  padding: 15px 20px;
+  font-weight: 300;
 }
 
 .tagline {

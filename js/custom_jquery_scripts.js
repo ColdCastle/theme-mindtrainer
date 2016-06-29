@@ -25,15 +25,20 @@ $(window).on('scroll', function () {
 		$(".toggle_nyhedsbrev").toggle();
 	});
 
-	// BOOTSTRAP OVERRULE
-	$('.dropdown').hover(function() {
-	  $('.dropdown').toggleClass('open');
+	// DROPDOWN ON HOVER - START
+	$('.dropdown').mouseover(function() {
+		if($(window).width() > 767) {
+			  $('.dropdown').addClass('open');
+			$('.dropdown-toggle').attr('aria-expanded', true);
+		}
 	});
 
-
-
-
-
-	  // BOOTSTRAP OVERRULE END
+	$('.dropdown').mouseleave(function() {
+		if($(window).width() > 767) {
+			$('.dropdown').removeClass('open');
+			$('dropdown-toggle').attr('aria-expanded', false);
+		}
+	});
+	// DROPDOWN ON HOVER - END
 
 });
