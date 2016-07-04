@@ -280,7 +280,7 @@ Control text on front page */
 
 .frontpage_description p {
 	font-family: Roboto;
-	  font-size: 20px;
+	  font-size: 18px;
 	  padding: 15px 20px;
 	  font-weight: 300;
 	text-transform: uppercase;
@@ -295,7 +295,7 @@ Control text on front page */
 	text-transform: uppercase;
 	line-height: 28px;
 	text-align: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 
