@@ -578,6 +578,11 @@ Pinterest #F05F5C;
 	transition:background-color .2s ease-in-out;
 }
 
+.instagram:hover {
+	background-color: rgba(138, 58, 185, 1);
+	transition:background-color .2s ease-in-out;
+}
+
 .youtube:hover{
    background-color: rgb(168, 0, 0);
    transition:background-color .2s ease-in-out;
