@@ -655,6 +655,22 @@ $wp_customize->add_control( 'toggle_newsletter', array(
 		)
 	);
 
+	$wp_customize->add_setting(
+		'social_instagram',
+		array(
+			'default' => '',
+		)
+	);
+
+	$wp_customize->add_control(
+		'social_instagram',
+		array(
+			'label' => 'Instagram',
+			'section' => 'social_section',
+			'type' => 'text',
+		)
+	);
+
 		$wp_customize->add_setting(
 		'social_youtube',
 		array(
@@ -686,6 +702,7 @@ $wp_customize->add_control( 'toggle_newsletter', array(
 			'type' => 'text',
 		)
 	);
+
 
 	// FOOTER CUSTOMIZER
 

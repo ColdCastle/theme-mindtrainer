@@ -26,6 +26,7 @@
 		$grafik = get_theme_mod ( 'footer_grafik', 'true');
 		$grafik_link = get_theme_mod ( 'footer_grafik_link' );
 		$newsletter = get_theme_mod ( 'toggle_newsletter' );
+		$instagram = get_theme_mod ( 'social_instagram', true );
 
 		$maps_link = str_replace(' ','+',$maps);
 		$maps_zipcode = str_replace(' ','+',$zipcode);
@@ -34,7 +35,6 @@
 	<footer id="colophon" role="contentinfo">
 
 <div class="social col-md-5">
-
 	<?php
 		if ( $facebook ) { ?>
 			<a href="https://<?php echo $facebook; ?>" target="_blank" class="social-button facebook"><i class="fa fa-facebook"></i><span></span></a>
@@ -42,12 +42,17 @@
 		if ( $linkedin ) { ?>
 			<a href="https://<?php echo $linkedin; ?>" target="_blank" class="social-button linkedin"><i class="fa fa-linkedin"></i><span></span></a>
 	<?php }
+		if ( $instagram ) { ?>
+			<a href="https://<?php echo $instagram; ?>" target="_blank" class="social-button instagram"><i class="fa fa-instagram"></i><span></span></a>
+	<?php }
 		if ( $youtube ) { ?>
 			<a href="https://<?php echo $youtube; ?>" target="_blank" class="social-button youtube"><i class="fa fa-youtube"></i><span></span></a>
 	<?php }
 		if ( $twitter ) { ?>
 			<a href="https://<?php echo $twitter; ?>" target="_blank" class="social-button twitter"><i class="fa fa-twitter"></i><span></span></a>
 	<?php } ?>
+
+
 
 <!-- NYHEDSBREV
 <a id="nyhedsbrev_button" class="icon_button nyhedsbrev nyheds_link_small"><i class="fa fa-newspaper-o"></i></a><a id="nyhedsbrev_button" class="icon_button nyhedsbrev nyheds_link"><i class="fa fa-newspaper-o"></i> Nyhedsbrev</a>
