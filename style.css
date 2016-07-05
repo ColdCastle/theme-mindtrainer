@@ -298,6 +298,18 @@ Control text on front page */
   font-size: 16px;
 }
 
+.frontpage_description ol {
+  list-style: disc;
+  font-family: Roboto;
+  font-size: 16px;
+  padding: 0px 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 24px;
+  text-align: left;
+  margin-top: -28px;
+}
+
 
 /* Profile Picture */
 .profile_picture {

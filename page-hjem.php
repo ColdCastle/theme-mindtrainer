@@ -11,6 +11,9 @@ get_header(); ?>
 		<?php
 				$profile = get_theme_mod ( 'profilepicture01');
 				$tagline = get_theme_mod ( 'tagline_textbox');
+				$bullet1 = get_theme_mod ( 'tagline_bullet_1');
+				$bullet2 = get_theme_mod ( 'tagline_bullet_2');
+				$bullet3 = get_theme_mod ( 'tagline_bullet_3');
 
 if ( $profile ) { ?>
 
@@ -25,10 +28,9 @@ if ( $profile ) { ?>
 			</div>
 
 			 <div class="col-md-6">
-				 <?php } else { ?>
-
-				 <div class="col-md-8 col-md-offset-2">
-					 <?php } ?>
+<?php } else { ?>
+		<div class="col-md-8 col-md-offset-2">
+	 <?php } ?>
 					<div class="entry-content frontpage-text">
 						<div id="businesscard">
 							<table id="header">
@@ -38,6 +40,20 @@ if ( $profile ) { ?>
 						</div>
 						<div class="frontpage_description">
 							<p><?php echo $tagline ?></p>
+							<?php
+								if ( $bullet1 or $bullet2 or $bullet3 ) { ?>
+									<ol>
+										<?php if ( $bullet1 ) { ?>
+											<li><?php echo $bullet1 ?></li>
+										<?php } ?>
+										<?php if ( $bullet2 ) { ?>
+											<li><?php echo $bullet2 ?></li>
+										<?php } ?>
+										<?php if ( $bullet3 ) { ?>
+											<li><?php echo $bullet3 ?></li>
+										<?php } ?>
+									</ol>
+								<?php } ?>
 						</div>
 						<div id="frontpage_buttons" class="col-md-12">
 							<div class="col-md-1"></div>

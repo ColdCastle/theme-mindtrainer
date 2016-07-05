@@ -182,11 +182,60 @@ function mindtrainer_customize_register($wp_customize){
   $wp_customize->add_control(
 	'tagline_textbox',
 	array(
-		'label' => 'Tag-line',
+		'label' => 'Tagline',
 		'section' => 'mindtrainer_information',
 		'type' => 'textarea',
 	)
 );
+
+		  //  TAGLINE BULLET 1
+	$wp_customize->add_setting(
+	'tagline_bullet_1',
+	array(
+		'default' => 'Dit potentiale',
+	)
+);
+  $wp_customize->add_control(
+	'tagline_bullet_1',
+	array(
+		'label' => 'Tagline: Bullet 1',
+		'section' => 'mindtrainer_information',
+		'type' => 'text',
+	)
+);
+
+			  //  TAGLINE BULLET 2
+	$wp_customize->add_setting(
+	'tagline_bullet_2',
+	array(
+		'default' => 'Dine værdier',
+	)
+);
+  $wp_customize->add_control(
+	'tagline_bullet_2',
+	array(
+		'label' => 'Tagline: Bullet 2',
+		'section' => 'mindtrainer_information',
+		'type' => 'text',
+	)
+);
+
+			  //  TAGLINE BULLET 3
+	$wp_customize->add_setting(
+	'tagline_bullet_3',
+	array(
+		'default' => 'Dine ønsker',
+	)
+);
+  $wp_customize->add_control(
+	'tagline_bullet_3',
+	array(
+		'label' => 'Tagline: Bullet 3',
+		'section' => 'mindtrainer_information',
+		'type' => 'text',
+	)
+);
+
 
 }
 

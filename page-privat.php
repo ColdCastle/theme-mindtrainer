@@ -14,7 +14,12 @@
 
 get_header(); ?>
 
-	<? $tagline = get_theme_mod ( 'tagline_textbox'); ?>
+	<?php 	$tagline = get_theme_mod ( 'tagline_textbox');
+			$bullet1 = get_theme_mod ( 'tagline_bullet_1');
+			$bullet2 = get_theme_mod ( 'tagline_bullet_2');
+			$bullet3 = get_theme_mod ( 'tagline_bullet_3');
+?>
+
 
 
 	<div id="primary" class="site-content">
@@ -23,7 +28,19 @@ get_header(); ?>
 			<div class="col-md-12">
 				<div class="col-md-2"></div>
 				 <div class="col-md-8">
-					<p class="tagline"><?php echo $tagline ?></p>
+					<p class="tagline">
+						<!-- ALL BULLETS -->
+						<?php if ( $bullet1 and $bullet2 and $bullet3 ) { ?>
+							<?php echo $tagline, ' ', $bullet1, ', ', $bullet2, ' og ', $bullet3 ?>
+						<!-- TWO BULLETS -->
+						<?php } else if ( $bullet1 and $bullet2) { ?>
+							<?php echo $tagline, ' ', $bullet1, ' og ', $bullet2 ?>
+						<?php } else if ( $bullet1 ) { ?>
+							<?php echo $tagline, ' ', $bullet1 ?>
+						<?php } else { ?>
+							<?php echo $tagline ?>
+						<?php } ?>
+					</p>
 				</div>
 				<div class="col-md-2"></div>
 			</div>
