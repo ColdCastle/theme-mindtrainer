@@ -1094,3 +1094,21 @@ textarea#comment {
   font-weight: 300;
   text-decoration: none;
 }
+
+
+/* ----------------
+     OM MIG
+------------------- */
+
+.about_headline {
+	font-weight: 100;
+	font-size: 18px;
+	text-align: center;
+	color: #666;
+}
+
+@media (min-width: 992px) {
+    .om-mig_line {
+        display: none;
+    }
+}
