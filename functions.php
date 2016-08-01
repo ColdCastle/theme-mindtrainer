@@ -454,15 +454,6 @@ $wp_customize->add_setting( 'mindtrainer_corporate_06' );
 	'settings' => 'profilepicture01',
 ) ) );
 
-	$wp_customize->add_setting( 'profilepicture02' );
-
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'profilepicture02', array(
-	'label'    => __( 'Secondary Profile Picture', 'mindtrainer' ),
-	'section'  => 'mindtrainer_picture_section',
-	'settings' => 'profilepicture02',
-) ) );
-
-
 
 	// ABOUT ME PAGE
 
@@ -505,15 +496,6 @@ $wp_customize->add_setting(
 	'label'    => __( 'Andet billede', 'mindtrainer' ),
 	'section'  => 'about_section',
 	'settings' => 'office_picture_02',
-) ) );
-
-	// 3RD OFFICE PICTURE
-		$wp_customize->add_setting( 'office_picture_03' );
-
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'office_picture_03', array(
-	'label'    => __( 'Tredje billede', 'mindtrainer' ),
-	'section'  => 'about_section',
-	'settings' => 'office_picture_03',
 ) ) );
 
 

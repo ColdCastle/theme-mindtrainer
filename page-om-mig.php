@@ -36,16 +36,31 @@ get_header(); ?>
                 <hr class="om-mig_line">
                 <h4 class="about_headline"><?php echo get_theme_mod ( 'about_overskrift' ); ?></h4>
                 <div class="office_pictures">
-                <div class="col-xs-6 col-md-12">
-                <?php if ($office01) { ?>
+                
+                <?php if ($office01 && $office02) { ?>
+                    <div class="col-xs-6 col-md-12">
                     <img class="embedded_image" width="100%" src="<?php echo $office01; ?>" />
-                <?php } ?>
                     </div>
                     <div class="col-xs-6 col-md-12">
-                <?php if ($office02) { ?>
                     <img class="embedded_image" width="100%" src="<?php echo $office02; ?>" />
-                <?php } ?>    
                     </div>
+                <?php } 
+                    elseif (($office01 && !($office2)) or ($office02 && !($office01))) { ?>
+                    <?php if ($office01) { ?>
+                        <div class="col-xs-2"></div>
+                            <div class="col-xs-8 col-md-12">
+                                <img class="embedded_image" width="100%" src="<?php echo $office01; ?>" />
+                            </div>
+                        <div class="col-xs-2"></div>
+                    <?php } 
+                        elseif ($office02) { ?>
+                        <div class="col-xs-2"></div>
+                            <div class="col-xs-8 col-md-12">
+                                <img class="embedded_image" width="100%" src="<?php echo $office02; ?>" />
+                            </div>
+                        <div class="col-xs-2"></div>
+                    <?php } ?>
+                <?php } ?>
                 </div>
             </div>
             <!-- <div class="col-xs-2"></div> -->
